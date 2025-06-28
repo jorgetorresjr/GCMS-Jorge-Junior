@@ -24,5 +24,9 @@ public class HomeController {
 	@RequestMapping("/ninguem")
 	public @ResponseBody String greetingNinguem() {
 		return "Hello, Ninguém!";
+	
+	@RequestMapping("/someone")
+	public @ResponseBody String greetingSomeone() {
+		return "Hello, Someone!";
 	}
 }

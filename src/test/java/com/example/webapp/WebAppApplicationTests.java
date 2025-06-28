@@ -40,4 +40,10 @@ class WebAppApplicationTests {
 		this.mockMvc.perform(get("/ninguem")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("Hello, Ninguém!")));
 	}
+	
+	@Test
+	public void shouldReturnSomeone() throws Exception {
+		this.mockMvc.perform(get("/someone")).andDo(print()).andExpect(status().isOk())
+				.andExpect(content().string(containsString("Hello, Someone!")));
+	}
 }
