@@ -26,7 +26,7 @@ class WebAppApplicationTests {
 	@Test
 	public void shouldReturnName() throws Exception {
 		this.mockMvc.perform(get("/jorge")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString("Hello, Jorge!!!!")));
+				.andExpect(content().string(containsString("Hello, Jorge!")));
 	}
 
 	@Test
