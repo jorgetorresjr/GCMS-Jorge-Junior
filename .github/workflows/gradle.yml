@@ -18,7 +18,7 @@ jobs:
 
     runs-on: ubuntu-latest
     container:
-      image: docker://jorgetorresjr/rep_pratica06:imagem-docker
+      image: docker://jorgetorresjr/gcms:imagem-docker
     
     permissions:
       contents: read
