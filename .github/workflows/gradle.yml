@@ -17,6 +17,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    container:
+      image: docker://jorgetorresjr/gcms:imagem-docker
+    
     permissions:
       contents: read
 
